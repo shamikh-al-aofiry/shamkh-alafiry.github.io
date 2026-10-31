@@ -1,1 +1,239 @@
 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شامخ العفيري | مهندس تقنية معلومات</title>
+    <!-- ربط ملف التنسيقات الخارجي بمسار نسبي متوافق مع GitHub Pages -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- مكتبة الأيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- شريط التنقل العلوي -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo"><span>Shamkh</span>. Alafiry</a>
+            <nav class="navbar" id="navbar">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link" data-i18n="nav_home">الرئيسية</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav_about">عني</a></li>
+                    <li><a href="#education" class="nav-link" data-i18n="nav_education">التعليم</a></li>
+                    <li><a href="#skills" class="nav-link" data-i18n="nav_skills">المهارات</a></li>
+                    <li><a href="#projects" class="nav-link" data-i18n="nav_projects">المشاريع</a></li>
+                    <li><a href="#interests" class="nav-link" data-i18n="nav_interests">الاهتمامات</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav_contact">تواصل معي</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <!-- زر تبديل اللغة -->
+                <button id="lang-toggle" class="btn-icon" title="Change Language">
+                    <i class="fa-solid fa-globe"></i> <span id="lang-text">EN</span>
+                </button>
+                <!-- زر الوضع الداكن/الفاتح -->
+                <button id="theme-toggle" class="btn-icon" title="Toggle Theme">
+                    <i class="fa-solid fa-moon" id="theme-icon"></i>
+                </button>
+                <!-- زر القائمة للهواتف -->
+                <div class="hamburger" id="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- قسم الرئيسية (Home) -->
+    <section id="home" class="hero-section">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="badge" data-i18n="hero_badge">مهندس تقنية معلومات</span>
+                <h1 class="hero-title"><span data-i18n="hero_greeting">مرحباً، أنا</span> <span class="highlight">شامخ العفيري</span></h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">طريقي يجمع بين هندسة الشبكات المتقدمة، حماية البنية التحتية للأمن السيبراني، وتطبيقات الذكاء الاصطناعي لبناء أنظمة ذكية وآمنة.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary" data-i18n="btn_contact">تواصل معي</a>
+                    <a href="./cv.pdf" class="btn btn-outline" target="_blank" data-i18n="btn_cv"><i class="fa-solid fa-file-arrow-down"></i> تحميل السيرة الذاتية</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card-glow">
+                    <div class="avatar-placeholder">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم عني (About Me) -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="about_title">نبذة عني</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <h3 data-i18n="about_academic_heading">الخلفية الأكاديمية</h3>
+                    <p data-i18n="about_academic_desc">أدرس تكنولوجيا المعلومات في جامعة ذمار - كلية الحاسبات والمعلوماتية. أركز جهودي على فهم وهندسة النظم التقنية المعقدة وربط الجانب الأكاديمي بالتطبيق العملي.</p>
+                </div>
+                <div class="about-card">
+                    <i class="fa-solid fa-bullseye"></i>
+                    <h3 data-i18n="about_goals_heading">الأهداف المهنية</h3>
+                    <p data-i18n="about_goals_desc">أسعى لتقديم نفسي بصورة احترافية، الحصول على فرص تدريب وتطوير مهني، وتقديم قيمة حقيقية في مشاريع البنية التحتية والأمن السيبراني والذكاء الاصطناعي.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التعليم (Education) -->
+    <section id="education" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title" data-i18n="edu_title">التعليم والمؤهلات</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date" data-i18n="edu_date">المرحلة الحالية</span>
+                        <h3 data-i18n="edu_degree">بكالوريوس في تكنولوجيا المعلومات (IT)</h3>
+                        <h4 data-i18n="edu_university">جامعة ذمار - كلية الحاسبات والمعلوماتية</h4>
+                        <p data-i18n="edu_desc">دراسة متقدمة تشمل هندسة الشبكات، أنظمة التشغيل، قواعد البيانات، وتحليل وتصميم نظم المعلومات.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المهارات (Skills) -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="skills_title">المهارات التقنية</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-network-wired"></i> <span data-i18n="skill_cat_net">الشبكات والبنية التحتية</span></h3>
+                    <div class="skill-tags">
+                        <span>GNS3 Simulation</span>
+                        <span>VLAN & Routing</span>
+                        <span>OSPF Protocol</span>
+                        <span>Network Infrastructure</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-shield-halved"></i> <span data-i18n="skill_cat_sec">الأمن السيبراني</span></h3>
+                    <div class="skill-tags">
+                        <span>Security Protocols</span>
+                        <span>Access Control Lists (ACL)</span>
+                        <span>AAA Framework</span>
+                        <span>Network Security Management</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-brain"></i> <span data-i18n="skill_cat_ai">الذكاء الاصطناعي والتقنية</span></h3>
+                    <div class="skill-tags">
+                        <span>Python & PyTorch</span>
+                        <span>Machine Learning Concepts</span>
+                        <span>Data Preprocessing</span>
+                        <span>Linux / Termux Environment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المشاريع (Projects) -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title" data-i18n="projects_title">المشاريع الرئيسية</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fa-solid fa-server"></i>
+                        <span class="project-tag">مشروع التخرج</span>
+                    </div>
+                    <h3>NIM&S</h3>
+                    <h4 data-i18n="project_nims_sub">Network Infrastructure Management & Security System</h4>
+                    <p data-i18n="project_nims_desc">نظام متكامل لإدارة ومراقبة وتأمين البنية التحتية للشبكات في المؤسسات الأكاديمية (جامعة ذمار)، يشمل محاكاة الشبكات وتطبيق معايير الأمان المتقدمة.</p>
+                    <div class="project-tech">
+                        <span>GNS3</span>
+                        <span>Routing & Switching</span>
+                        <span>Network Security</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم مجالات الاهتمام (Areas of Interest) -->
+    <section id="interests" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="interests_title">مجالات الاهتمام</h2>
+            <div class="interests-grid">
+                <div class="interest-card">
+                    <i class="fa-solid fa-ethernet"></i>
+                    <h3 data-i18n="interest_net">هندسة الشبكات</h3>
+                </div>
+                <div class="interest-card">
+                    <i class="fa-solid fa-city"></i>
+                    <h3 data-i18n="interest_infra">البنية التحتية</h3>
+                </div>
+                <div class="interest-card">
+                    <i class="fa-solid fa-lock"></i>
+                    <h3 data-i18n="interest_sec">الأمن السيبراني</h3>
+                </div>
+                <div class="interest-card">
+                    <i class="fa-solid fa-microchip"></i>
+                    <h3 data-i18n="interest_ai">الذكاء الاصطناعي</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل (Contact) -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contact_title">تواصل معي</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p data-i18n="contact_desc">أرحب بالتواصل لفرص التدريب، التعاون الأكاديمي، أو الاستفسارات المهنية.</p>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>shamkh.alafiry@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span data-i18n="contact_loc">ذمار، اليمن</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/shamkhAlafiry" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://t.me" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form" onsubmit="event.preventDefault(); alert('شكراً لتواصلك! سيتم الرد عليك قريباً.');">
+                    <div class="form-group">
+                        <input type="text" placeholder="الاسم الكريم" required data-i18n-placeholder="form_name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="البريد الإلكتروني" required data-i18n-placeholder="form_email">
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="رسالتك..." required data-i18n-placeholder="form_msg"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-i18n="form_submit">إرسال الرسالة</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر (Footer) -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Shamkh Alafiry. <span data-i18n="footer_rights">جميع الحقوق محفوظة.</span></p>
+        </div>
+    </footer>
+
+    <!-- ربط ملف الجافاسكريبت الخارجي بمسار نسبي -->
+    <script src="./script.js"></script>
+</body>
+</html>
